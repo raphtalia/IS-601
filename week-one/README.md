@@ -33,4 +33,16 @@ numbers or strings and then compared to be equal.
 
 ## Where do you think the concept of truthy/falsy might be useful?
 
-An example is checking if a text field is not empty.
+An example is checking if a text field is not empty. For example
+
+```js
+if (textField.value) {
+  // do something
+}
+```
+
+## Research Notes
+
+The auto semicolon insertion can be accomplished using an extension in Visual
+Studio Code called Prettier which provides settings through a `.prettierrc` file
+for configuring settings such as line length, string quote preference and more.
