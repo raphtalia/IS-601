@@ -1,0 +1,16 @@
+{
+  "name": "lab-one",
+  "version": "1.0.0",
+  "bin": {
+    "lab-one": "./lab-one.js",
+    "lab-two": "./lab-two.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raphtalia/IS-601.git"
+  },
+  "author": "raphtalia",
+  "bugs": {
+    "url": "https://github.com/raphtalia/IS-601/issues"
+  }
+}
