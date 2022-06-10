@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "bin": {
     "lab-one": "./week-one/lab-one.js",
-    "lab-two": "./week-one/lab-two.js"
+    "lab-two": "./week-one/lab-two.js",
+    "lab-three": "./week-one/lab-three.js",
+    "lab-four": "./week-one/lab-four.js"
   },
   "repository": {
     "type": "git",
