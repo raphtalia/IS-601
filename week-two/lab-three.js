@@ -21,6 +21,8 @@ function getFutureToDos(todos) {
   return todos.filter((todo) => todo.due > now);
 }
 
-(async () => {
-  console.log(getFutureToDos(await fakeApi.fetchToDos()));
-})();
+// (async () => {
+//   console.log(getFutureToDos(await fakeApi.fetchToDos()));
+// })();
+
+module.exports = { fakeApi, getFutureToDos };

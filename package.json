@@ -1,6 +1,14 @@
 {
   "name": "lab-one",
   "version": "1.0.0",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "@babel/preset-env": "^7.18.2",
+    "babel-jest": "^28.1.0",
+    "jest": "^28.1.0"
+  },
   "bin": {
     "lab-one": "./week-one/lab-one.js",
     "lab-two": "./week-one/lab-two.js",

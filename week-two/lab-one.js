@@ -1,6 +1,4 @@
-#!/usr/bin/env node
-
-function costOfLemonade(n) {
+function getCostOfLemonade(n) {
   if (isNaN(parseInt(n))) {
     throw new Error("n must be a number");
   }
@@ -17,20 +15,24 @@ function costOfLemonade(n) {
   }
 }
 
-function formatCost(numLemonades, cost) {
-  return `${numLemonades} lemonade${numLemonades > 1 ? "s" : ""} will cost ${cost} cents`;
+function getFormattedCostOfLemonade(numLemonades) {
+  return `${numLemonades} lemonade${numLemonades === 1 ? "" : "s"} will cost ${getCostOfLemonade(
+    numLemonades
+  )} cents`;
 }
 
-function printCost(numLemonades) {
-  console.log(formatCost(numLemonades, costOfLemonade(numLemonades)));
-}
+// function printCost(numLemonades) {
+//   console.log(getFormattedCostOfLemonade(numLemonades));
+// }
 
-printCost(1); // 100
-printCost(4); // 400
-printCost(5); // 475
-printCost(9); // 855
-printCost(10); // 900
-printCost(100); // 9000
+// printCost(1); // 100
+// printCost(4); // 400
+// printCost(5); // 475
+// printCost(9); // 855
+// printCost(10); // 900
+// printCost(100); // 9000
 
-printCost([]); // ERROR
-printCost(-1); // ERROR
+// printCost([]); // ERROR
+// printCost(-1); // ERROR
+
+module.exports = { getCostOfLemonade, getFormattedCostOfLemonade };

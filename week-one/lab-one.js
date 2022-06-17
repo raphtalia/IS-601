@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 
-function helloWorld() {
+module.exports = () => {
   return "Hello, world!";
-}
-
-console.log(helloWorld());
+};

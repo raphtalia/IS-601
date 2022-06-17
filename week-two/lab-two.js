@@ -1,8 +1,8 @@
-function addIsAwesome(baseString, callback) {
+module.exports = (baseString, callback) => {
   callback(baseString + " is awesome");
-}
+};
 
-addIsAwesome("Training", console.log);
+// addIsAwesome("Training", console.log);
 
 // function first() {
 //   setTimeout(() => console.log(1), 500);
