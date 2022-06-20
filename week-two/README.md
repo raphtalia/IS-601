@@ -33,7 +33,10 @@ then does the application display the correct value if a user inputs a number.
 ## What do you think the key differences are between CommonJS and ES6 Modules are?
 
 A key difference is CommonJS can only be run in NodeJS while ES6 modules can be
-run in both NodeJS and browsers.
+run in both NodeJS and browsers. Another key difference is how exports are
+handled in CommonJS vs. ES6. in CommonJS exports are done by modifying
+`module.exports` while in ES6 there is a `export` keyword for creating exports
+and `export default` for specifying a default export.
 
 ## Research Notes
 
