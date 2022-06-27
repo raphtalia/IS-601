@@ -1,6 +1,7 @@
 import { getFutureToDos, fakeApi } from "./getFutureToDos";
 
 describe("getFutureToDos", () => {
+  // Tests written before class
   // utility function to help create a delay
   // const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
   // your code here.

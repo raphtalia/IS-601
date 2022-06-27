@@ -13,6 +13,24 @@ describe("separateOddsAndEvens", () => {
     expect(separateOddsAndEvens([11, 21, 31])).toEqual([[11, 21, 31], []]);
   });
 
+  test.each([
+    [
+      [1, 2],
+      [[1], [2]],
+    ],
+    [
+      [10, 20, 30],
+      [[], [10, 20, 30]],
+    ],
+    [
+      [11, 21, 31],
+      [[11, 21, 31], []],
+    ],
+  ])("WHEN array is %j THEN is returns %j", (input, expected) => {
+    expect(separateOddsAndEvens(input)).toEqual(expected);
+  });
+
+  // Tests written before class
   it("should separate random odd and even numbers into 2 arrays", () => {
     const input = [];
 

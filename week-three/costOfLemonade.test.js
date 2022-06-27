@@ -1,6 +1,32 @@
 const { getCostOfLemonade, getFormattedCostOfLemonade } = require("./costOfLemonade");
 
 describe("costOfLemonade", () => {
+  describe("GIVEN a valid input", () => {
+    test.each([
+      [1, 100],
+      [4, 400],
+      [5, 475],
+      [9, 855],
+      [10, 900],
+      [100, 9000],
+    ])("WHEN numberOfLemonades is %i THEN it returns %i", (numberOfLemonades, expectedCost) => {
+      expect(getCostOfLemonade(numberOfLemonades)).toBe(expectedCost);
+    });
+  });
+
+  describe("GIVEN an invalid input", () => {
+    test.each([
+      // ["1"],
+      ["-1"],
+      [-1],
+      [{ name: "alex" }],
+      [null],
+    ])("WHEN numberOfLemonades is %i THEN it throws an error", (invalidInput) => {
+      expect(() => getCostOfLemonade(invalidInput)).toThrowError();
+    });
+  });
+
+  // Tests written before class
   it("should return cost of lemonades", () => {
     expect(getCostOfLemonade(0)).toBe(0);
     expect(getCostOfLemonade(1)).toBe(100);
