@@ -17,16 +17,12 @@ function moveForward(x, y, direction) {
   switch (direction) {
     case Direction.NORTH:
       return { position: [x, y + 1], direction };
-      break;
     case Direction.WEST:
       return { position: [x - 1, y], direction };
-      break;
     case Direction.EAST:
       return { position: [x + 1, y], direction };
-      break;
     case Direction.SOUTH:
       return { position: [x, y - 1], direction };
-      break;
     default:
       return { position: [x, x], direction };
   }
