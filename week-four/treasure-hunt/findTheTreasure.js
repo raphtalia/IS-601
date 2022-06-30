@@ -54,7 +54,6 @@ function turnLeft(x, y, direction) {
 function findTheTreasure(startingPosition, direction, instructions) {
   return instructions.reduce(
     (location, instruction) => {
-      console.log(location.position, instruction);
       switch (instruction) {
         case Instruction.FORWARD:
           return moveForward(location.position[0], location.position[1], location.direction);
