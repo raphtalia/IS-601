@@ -6,15 +6,8 @@
   },
   "dependencies": {
     "@babel/preset-env": "^7.18.2",
-    "axios": "^0.27.2",
     "babel-jest": "^28.1.0",
     "jest": "^28.1.0"
-  },
-  "bin": {
-    "lab-one": "./week-one/lab-one.js",
-    "lab-two": "./week-one/lab-two.js",
-    "lab-three": "./week-one/lab-three.js",
-    "lab-four": "./week-one/lab-four.js"
   },
   "repository": {
     "type": "git",
