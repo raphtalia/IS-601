@@ -52,16 +52,30 @@ function turnLeft(x, y, direction) {
 }
 
 function findTheTreasure(startingPosition, direction, instructions) {
+  console.log(`Starting at (${startingPosition[0]}, ${startingPosition[1]}) facing ${direction}`);
+
   return instructions.reduce(
     (location, instruction) => {
+      let newLocation;
+
       switch (instruction) {
         case Instruction.FORWARD:
-          return moveForward(location.position[0], location.position[1], location.direction);
+          newLocation = moveForward(location.position[0], location.position[1], location.direction);
+          console.log(
+            `Moving ${location.direction} one pace to (${newLocation.position[0]}, ${newLocation.position[1]})`
+          );
+          break;
         case Instruction.LEFT:
-          return turnLeft(location.position[0], location.position[1], location.direction);
+          newLocation = turnLeft(location.position[0], location.position[1], location.direction);
+          console.log(`Turning left to face ${newLocation.direction}`);
+          break;
         case Instruction.RIGHT:
-          return turnRight(location.position[0], location.position[1], location.direction);
+          newLocation = turnRight(location.position[0], location.position[1], location.direction);
+          console.log(`Turning right to face ${newLocation.direction}`);
+          break;
       }
+
+      return newLocation;
     },
     {
       position: startingPosition,
