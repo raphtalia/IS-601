@@ -11,10 +11,10 @@
     "jest": "^28.1.0"
   },
   "bin": {
-    "lab-one": "./week-one/lab-one.js",
-    "lab-two": "./week-one/lab-two.js",
-    "lab-three": "./week-one/lab-three.js",
-    "lab-four": "./week-one/lab-four.js"
+    "lab-one": "./week-1/lab-one.js",
+    "lab-two": "./week-1/lab-two.js",
+    "lab-three": "./week-1/lab-three.js",
+    "lab-four": "./week-1/lab-four.js"
   },
   "repository": {
     "type": "git",
